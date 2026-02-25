@@ -36,6 +36,10 @@ dependencies:
   # Date/Time
   intl: ^0.19.0
 
+  # SVG + Animations
+  flutter_svg: ^2.0.9
+  flutter_animate: ^4.5.0
+
   # Utils
   path_provider: ^2.1.2
   equatable: ^2.0.5
@@ -63,6 +67,7 @@ flutter:
   # Assets
   assets:
     - assets/images/
+    - assets/images/svgs/
     - assets/animations/
     - assets/sounds/
 

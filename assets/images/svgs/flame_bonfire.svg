@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 360">
+  <defs>
+    <linearGradient id="log" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4E342E"/>
+      <stop offset="50%" stop-color="#3E2723"/>
+      <stop offset="100%" stop-color="#1A0000"/>
+    </linearGradient>
+    <radialGradient id="logEnd" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#6D4C41"/>
+      <stop offset="70%" stop-color="#3E2723"/>
+      <stop offset="100%" stop-color="#1A0000"/>
+    </radialGradient>
+    <radialGradient id="ember" gradientUnits="userSpaceOnUse" cx="150" cy="352" r="122">
+      <stop offset="0%" stop-color="#FF8F00" stop-opacity="0.92"/>
+      <stop offset="50%" stop-color="#FF6D00" stop-opacity="0.52"/>
+      <stop offset="100%" stop-color="#FF6D00" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="f" cx="50%" cy="72%" r="52%">
+      <stop offset="0%" stop-color="#FFFDE7"/>
+      <stop offset="24%" stop-color="#FFD54F"/>
+      <stop offset="57%" stop-color="#FF6D00"/>
+      <stop offset="100%" stop-color="#D84315"/>
+    </radialGradient>
+    <radialGradient id="f2" cx="50%" cy="72%" r="52%">
+      <stop offset="0%" stop-color="#FFFDE7"/>
+      <stop offset="33%" stop-color="#FFB300"/>
+      <stop offset="68%" stop-color="#E64A19"/>
+      <stop offset="100%" stop-color="#BF360C"/>
+    </radialGradient>
+  </defs>
+  <!-- Ground glow -->
+  <ellipse cx="150" cy="348" rx="120" ry="22" fill="url(#ember)"/>
+  <!-- Bottom log layer (X) -->
+  <rect x="28" y="292" width="244" height="30" rx="14"
+        transform="rotate(-24 150 307)" fill="url(#log)"/>
+  <ellipse cx="24" cy="296" rx="15" ry="12"
+           transform="rotate(-24 24 296)" fill="url(#logEnd)"/>
+  <ellipse cx="276" cy="318" rx="15" ry="12"
+           transform="rotate(-24 276 318)" fill="url(#logEnd)"/>
+  <rect x="28" y="292" width="244" height="30" rx="14"
+        transform="rotate(24 150 307)" fill="url(#log)"/>
+  <ellipse cx="276" cy="296" rx="15" ry="12"
+           transform="rotate(24 276 296)" fill="url(#logEnd)"/>
+  <ellipse cx="24" cy="318" rx="15" ry="12"
+           transform="rotate(24 24 318)" fill="url(#logEnd)"/>
+  <!-- Middle log layer -->
+  <rect x="54" y="270" width="192" height="26" rx="12"
+        transform="rotate(-17 150 283)" fill="url(#log)" opacity="0.94"/>
+  <rect x="54" y="270" width="192" height="26" rx="12"
+        transform="rotate(17 150 283)" fill="url(#log)" opacity="0.94"/>
+  <!-- Outer wisp flames -->
+  <path d="M50 284 C34 267 26 242 30 216 C34 194 46 182 47 160
+           C50 175 47 190 54 197 C61 190 59 175 62 160
+           C63 180 75 192 81 214 C88 240 80 268 50 284Z"
+        fill="url(#f2)" opacity="0.63"/>
+  <path d="M250 284 C232 268 226 240 233 214 C239 192 251 180 252 160
+           C255 175 253 190 260 197 C267 190 265 175 268 160
+           C269 182 280 194 284 216 C288 242 280 267 250 284Z"
+        fill="url(#f2)" opacity="0.63"/>
+  <!-- Left/right wide flames -->
+  <path d="M88 287 C68 267 59 238 64 208 C68 182 82 170 83 142
+           C86 160 82 177 91 185 C100 177 98 160 101 142
+           C102 168 118 182 124 208 C130 236 120 267 88 287Z"
+        fill="url(#f)" opacity="0.82"/>
+  <path d="M212 287 C192 267 182 236 188 208 C194 182 210 168 211 142
+           C214 160 212 177 221 185 C230 177 228 160 231 142
+           C232 170 248 182 252 208 C257 238 248 267 212 287Z"
+        fill="url(#f)" opacity="0.82"/>
+  <!-- Inner tall flames -->
+  <path d="M118 290 C96 270 85 238 90 206 C94 178 109 164 110 134
+           C113 154 109 174 120 182 C131 174 129 154 132 134
+           C133 162 148 178 154 206 C160 238 149 270 118 290Z"
+        fill="url(#f)" opacity="0.93"/>
+  <path d="M182 290 C160 270 152 238 158 206 C164 178 178 162 179 134
+           C182 154 180 174 190 182 C200 174 198 154 201 134
+           C202 164 215 178 220 206 C225 238 214 270 182 290Z"
+        fill="url(#f)" opacity="0.93"/>
+  <!-- Tallest center flame -->
+  <path d="M150 292 C118 268 100 230 108 192 C114 160 134 142 136 104
+           C140 128 135 152 148 162 C161 152 158 128 162 104
+           C164 140 184 160 192 192 C200 230 184 268 150 292Z"
+        fill="url(#f)"/>
+  <!-- Floating sparks -->
+  <circle cx="110" cy="92" r="3.2" fill="#FFD54F" opacity="0.88"/>
+  <circle cx="162" cy="68" r="2.6" fill="#FFB300" opacity="0.78"/>
+  <circle cx="200" cy="104" r="2.2" fill="#FFD54F" opacity="0.68"/>
+  <circle cx="78"  cy="134" r="2.0" fill="#FF8F00" opacity="0.62"/>
+  <circle cx="224" cy="122" r="3.0" fill="#FFD54F" opacity="0.72"/>
+  <circle cx="138" cy="60"  r="2.2" fill="#FFEE58" opacity="0.82"/>
+  <circle cx="176" cy="84"  r="1.8" fill="#FFD54F" opacity="0.73"/>
+  <circle cx="96"  cy="112" r="1.6" fill="#FF8F00" opacity="0.58"/>
+  <circle cx="190" cy="78"  r="2.4" fill="#FFEE58" opacity="0.68"/>
+  <circle cx="130" cy="48"  r="1.8" fill="#FFD54F" opacity="0.76"/>
+  <!-- Inner bright cores -->
+  <path d="M150 282 C134 262 126 236 130 214 C133 198 140 187 144 174
+           C147 187 152 198 157 214 C161 236 166 262 150 282Z"
+        fill="#FFF9C4" opacity="0.87"/>
+  <path d="M150 270 C141 255 136 234 139 218 C141 206 147 200 150 194
+           C153 200 159 206 161 218 C164 234 159 255 150 270Z"
+        fill="#FFFDE7" opacity="0.68"/>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFD54F"/>
+      <stop offset="100%" stop-color="#FF6D00"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="1.2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <!-- Eye (open, stylized) -->
+  <path d="M24 11 C11 11 3 24 3 24 C3 24 11 37 24 37 C37 37 45 24 45 24 C45 24 37 11 24 11Z"
+        fill="url(#g)" filter="url(#glow)"/>
+  <!-- Pupil -->
+  <circle cx="24" cy="24" r="7.5" fill="#1A0000"/>
+  <!-- Iris ring -->
+  <circle cx="24" cy="24" r="7.5" fill="none" stroke="#FF8F00" stroke-width="1.5" opacity="0.7"/>
+  <!-- Highlight -->
+  <circle cx="20.5" cy="20.5" r="2.8" fill="#FFFFFF" opacity="0.38"/>
+  <!-- Eyelash top hints -->
+  <path d="M14 16 L12 12 M24 12 L24 8 M34 16 L36 12"
+        stroke="#FFB300" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+</svg>

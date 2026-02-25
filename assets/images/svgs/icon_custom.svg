@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFEE58"/>
+      <stop offset="100%" stop-color="#FF8F00"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <!-- 4-pointed sparkle star -->
+  <path d="M24 4 L26.8 21.2 L44 24 L26.8 26.8 L24 44 L21.2 26.8 L4 24 L21.2 21.2 Z"
+        fill="url(#g)" filter="url(#glow)"/>
+  <!-- Small accent dots -->
+  <circle cx="9.5"  cy="9.5"  r="2.4" fill="#FFD54F" opacity="0.65"/>
+  <circle cx="38.5" cy="9.5"  r="1.8" fill="#FFEE58" opacity="0.55"/>
+  <circle cx="9.5"  cy="38.5" r="1.8" fill="#FFD54F" opacity="0.55"/>
+  <circle cx="38.5" cy="38.5" r="2.4" fill="#FFB300" opacity="0.50"/>
+</svg>

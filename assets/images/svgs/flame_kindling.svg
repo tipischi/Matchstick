@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="stick" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8B6914"/>
+      <stop offset="100%" stop-color="#5D3A00"/>
+    </linearGradient>
+    <radialGradient id="e" gradientUnits="userSpaceOnUse" cx="100" cy="192" r="62">
+      <stop offset="0%" stop-color="#FF8F00" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#FF6D00" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="f" cx="50%" cy="72%" r="52%">
+      <stop offset="0%" stop-color="#FFFDE7"/>
+      <stop offset="28%" stop-color="#FFD54F"/>
+      <stop offset="64%" stop-color="#FF6D00"/>
+      <stop offset="100%" stop-color="#D84315"/>
+    </radialGradient>
+  </defs>
+  <!-- Ember glow at base -->
+  <ellipse cx="100" cy="188" rx="55" ry="14" fill="url(#e)"/>
+  <!-- Kindling sticks -->
+  <rect x="44" y="158" width="112" height="10" rx="4"
+        transform="rotate(-32 100 163)" fill="url(#stick)"/>
+  <rect x="44" y="158" width="112" height="10" rx="4"
+        transform="rotate(32 100 163)" fill="url(#stick)"/>
+  <rect x="60" y="168" width="80" height="9" rx="4" fill="url(#stick)" opacity="0.85"/>
+  <!-- Left flame tongue -->
+  <path d="M74 168 C62 157 55 140 58 122 C61 108 69 100 70 86
+           C72 96 69 107 74 112 C79 107 77 96 79 86
+           C80 99 88 107 93 120 C98 137 93 157 74 168Z"
+        fill="url(#f)" opacity="0.80"/>
+  <!-- Center flame (tallest) -->
+  <path d="M100 168 C80 152 68 128 73 102 C77 80 91 70 92 48
+           C95 62 91 78 98 84 C105 78 103 62 106 48
+           C107 68 119 80 127 100 C134 126 124 152 100 168Z"
+        fill="url(#f)"/>
+  <!-- Right flame tongue -->
+  <path d="M126 168 C113 157 107 137 112 120 C115 107 121 99 122 86
+           C124 96 122 107 127 112 C132 107 130 96 131 86
+           C132 100 140 108 145 122 C150 140 143 158 126 168Z"
+        fill="url(#f)" opacity="0.80"/>
+  <!-- Inner bright core -->
+  <path d="M100 160 C91 148 86 132 89 118 C91 108 96 103 98 95
+           C100 103 104 109 106 118 C109 132 109 148 100 160Z"
+        fill="#FFF9C4" opacity="0.86"/>
+</svg>

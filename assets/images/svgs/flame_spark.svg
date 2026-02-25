@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 130">
+  <defs>
+    <radialGradient id="f" cx="50%" cy="72%" r="52%">
+      <stop offset="0%" stop-color="#FFFDE7"/>
+      <stop offset="28%" stop-color="#FFD54F"/>
+      <stop offset="64%" stop-color="#FF6D00"/>
+      <stop offset="100%" stop-color="#BF360C"/>
+    </radialGradient>
+    <radialGradient id="g" gradientUnits="userSpaceOnUse" cx="50" cy="122" r="36">
+      <stop offset="0%" stop-color="#FF6D00" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#FF6D00" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- Base glow -->
+  <ellipse cx="50" cy="120" rx="26" ry="9" fill="url(#g)"/>
+  <!-- Main flame body -->
+  <path d="M50 118 C28 104 16 83 20 60 C24 40 37 32 38 14
+           C40 24 37 37 43 43 C49 37 47 24 48 14
+           C49 28 61 38 67 55 C73 73 66 101 50 118Z"
+        fill="url(#f)"/>
+  <!-- Inner bright core -->
+  <path d="M50 111 C40 98 35 81 38 68 C40 59 44 54 47 45
+           C49 54 53 60 55 68 C58 81 60 98 50 111Z"
+        fill="#FFF9C4" opacity="0.88"/>
+</svg>

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 340">
+  <defs>
+    <linearGradient id="stick" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8B5E3C"/>
+      <stop offset="35%" stop-color="#C4873E"/>
+      <stop offset="65%" stop-color="#D4954A"/>
+      <stop offset="100%" stop-color="#8B5E3C"/>
+    </linearGradient>
+    <radialGradient id="head" cx="50%" cy="28%" r="65%">
+      <stop offset="0%" stop-color="#EF5350"/>
+      <stop offset="50%" stop-color="#C62828"/>
+      <stop offset="100%" stop-color="#7B1818"/>
+    </radialGradient>
+    <radialGradient id="f" cx="50%" cy="72%" r="52%">
+      <stop offset="0%" stop-color="#FFFDE7"/>
+      <stop offset="28%" stop-color="#FFD54F"/>
+      <stop offset="63%" stop-color="#FF6D00"/>
+      <stop offset="100%" stop-color="#BF360C"/>
+    </radialGradient>
+    <radialGradient id="g" gradientUnits="userSpaceOnUse" cx="40" cy="148" r="28">
+      <stop offset="0%" stop-color="#FF6D00" stop-opacity="0.52"/>
+      <stop offset="100%" stop-color="#FF6D00" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.38"/>
+    </filter>
+  </defs>
+  <!-- Matchstick body -->
+  <rect x="37" y="164" width="8" height="170" rx="3" fill="url(#stick)" filter="url(#shadow)"/>
+  <!-- Match head -->
+  <ellipse cx="41" cy="160" rx="13" ry="19" fill="url(#head)"/>
+  <!-- Head surface highlight -->
+  <ellipse cx="37" cy="152" rx="5.5" ry="4.5" fill="#FF7043" opacity="0.42"/>
+  <!-- Glow behind flame -->
+  <ellipse cx="41" cy="150" rx="25" ry="10" fill="url(#g)"/>
+  <!-- Flame body -->
+  <path d="M41 150 C24 137 14 115 18 91 C21 71 33 60 34 40
+           C36 52 33 65 39 72 C45 65 43 52 45 40
+           C46 57 57 68 63 88 C68 107 67 133 41 150Z"
+        fill="url(#f)"/>
+  <!-- Inner bright core -->
+  <path d="M41 143 C32 130 27 113 30 100 C32 90 37 83 39 74
+           C41 83 45 91 47 100 C50 113 50 130 41 143Z"
+        fill="#FFF9C4" opacity="0.87"/>
+  <!-- Embers near head -->
+  <circle cx="26" cy="158" r="2"   fill="#FF8F00" opacity="0.7"/>
+  <circle cx="56" cy="154" r="1.5" fill="#FFD54F" opacity="0.6"/>
+</svg>
